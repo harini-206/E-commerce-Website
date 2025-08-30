@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoStyle | Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <center>
+
+  <!-- 🔝 Navigation Bar -->
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <main class="container">
+    <h2>Contact Us</h2>
+
+    <!-- 📧 Contact Information -->
+    <div class="contact-info">Email: support@ecostyle.com<br>
+  Phone: +91-98765-43210<br>
+Adress: north /19A
+eco block 
+Mumbai -62006</p>
+      
+      <p><strong>Location:</strong> <a href="https://www.google.com/maps" target="_blank">View on Google Maps</a></p>
+    </div>
+
+    <hr>
+
+    <!-- 📝 Feedback Form -->
+    <section class="contact-form">
+      <h3>Send Us Your Feedback</h3>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+<script>
+  function validateForm() {
+    let name = document.forms["feedbackForm"]["name"].value;
+    if (name == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+</script>
+<form name="feedbackForm" onsubmit="return validateForm()">
+
+    <hr>
+
+    <!-- 📱 Social Media Links -->
+    <section class="social-links">
+      <h3>Follow Us</h3>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram" style="font-size: 30px; color: #C13584;"></i>
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <i class="fab fa-youtube" style="font-size: 30px; color: #FF0000;"></i>
+      </a>
+
+      <br><br>
+
+      
+    </section>
+  </main>
+<script src="script.js"></script>
+
+</body>
+</center>
+</html>

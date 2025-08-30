@@ -1,0 +1,71 @@
+/* ✅ GLOBAL STYLES */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fdfb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ HEADER/NAVBAR */
+.navbar {
+  background-color: #2e7d32;
+  padding: 12px;
+  text-align: center;
+}
+.navbar a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #66bb6a;
+}
+
+/* ✅ CONTAINER */
+.container, .about-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ✅ TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background-color: #e0f2f1;
+}
+
+/* ✅ BUTTON */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #388e3c;
+}
+
+/* ✅ ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
